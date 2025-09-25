@@ -1,0 +1,42 @@
+/* Centraliza o conteúdo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6; /* cinza claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container central */
+.container-home {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Logo do posto */
+.container-home img {
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+/* Botões Login / Registrar */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #1e40af; /* azul */
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2563eb; /* azul mais claro ao passar mouse */
+}

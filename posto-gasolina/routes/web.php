@@ -3,9 +3,15 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SaleController;
+use App\Models\Product;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/', function () {
+    $products = Product::all();
+    return view('home', compact('products'));
 });
 
 Route::middleware(['auth'])->group(function () {
